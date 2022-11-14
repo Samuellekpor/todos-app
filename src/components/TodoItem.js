@@ -1,9 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class TodoItem extends Component {
   render() {
-    return <li>{this.props.todo.title}</li>
+    return (
+    <li>
+      <input 
+      type="checkbox"
+      checked={this.props.todo.completed}
+      onChange={() => this.props.handleChangeProps(this.props.todo.id)}/>{this.props.todo.title}
+    </li>
+    )
   }
 }
 
-export default TodoItem
+export default TodoItem;
