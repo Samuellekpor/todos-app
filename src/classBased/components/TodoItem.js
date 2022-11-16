@@ -19,7 +19,7 @@ export class TodoItem extends Component {
   };
 
   componentWillUnmount() {
-    console.log("Cleaning up...")
+    console.log('Cleaning up...');
   }
 
   render() {
